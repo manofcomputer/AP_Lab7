@@ -13,15 +13,14 @@ public class PlayList implements Serializable {
     public void add(Music M){
         list.add(M);
     }
-    public void delete(String name){
+    public String delete(String name){
         for(int i = 0;i<list.size();i++){
             if(list.get(i).getName().equals(name)) {
                 list.remove(i);
-                System.out.println("Deleted: current size:"+list.size());
-                return;
+                return "Deleted: current size:"+list.size();
             }
         }
-        System.out.println("No Music Found");
+        return "No Music Found";
 
     }
     public String show(){

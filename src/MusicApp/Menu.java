@@ -16,7 +16,7 @@ public class Menu {
         }
         boolean choice = true;
         Scanner reader = new Scanner(System.in);
-        /*Music m1 = new Music("ABC","BOBBY","10");
+       /* Music m1 = new Music("ABC","BOBBY","10");
         Music m2 = new Music("fireflies","xefjifew","10:37");
         Music m3 = new Music("wed","imagine dragons","10:37");
         PlayList ll = new PlayList();
@@ -41,7 +41,7 @@ public class Menu {
                     list.add(M);
                 }
                 else if(option.equals("b"))
-                    list.delete(reader.nextLine());
+                    System.out.println(list.delete(reader.nextLine()));
                 else if(option.equals("c")){
                     System.out.println(list.search(reader.nextLine()));
                 }
